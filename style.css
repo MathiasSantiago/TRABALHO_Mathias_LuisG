@@ -10,6 +10,7 @@ body {
 
 .contato {
     background-color: #808080;
+    width: 100%;
     height: 6vh;
     display: flex;
     justify-content: end;
@@ -23,8 +24,8 @@ body {
 }
 
 .banner {
-    width: 100vw;
     height: 10vh;
+    width: 100%;
     display: flex;
 }
 
@@ -64,17 +65,16 @@ a {
 } 
 
 .principal {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 .text {
-    border-radius: 10px;
     margin-top: 5vh;
     margin-left: 10%;
     background-color: aliceblue;
     width: 80%;
-    height: 63%;
+    height: 90%;
     padding: 1%;
 }
 
@@ -92,24 +92,28 @@ a {
     align-items: center;
     margin-top: 5vh;
     width: 100%;
-    height: 28%;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    height: 70%;
     background-color: black;
 }
 
 .porque ul {
     margin-left: 6%;
+    margin-bottom: 2vw;
 }
 
 
 .porque li {
     color: bisque;
     font-size: 25px;
+    margin-top: 25px;
+    width: 800px;
+
 }
 
 .porque h1 {
     color: aliceblue;
+    width: 300px;
+    margin-left: 2vw;
 }
 
 /*-------ANIMAÇÃO--------*/

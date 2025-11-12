@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+.contato {
+    background-color: #808080;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contato h2 {
+    color: aliceblue;
+    margin-right: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.banner {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.banner h1 {
+    background-color: bisque;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner ul {
+    background-color: antiquewhite;
+    width: 70%;
+    height: 100%;
+}
+
+.nev {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nev li a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nev li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/*-------ANIMAÇÃO--------*/
+
+.anima img {
+    width: 35%;
+    height: 35%;
+}
+
+@keyframes moeda {
+    0% {transform: rotateX(0deg)}
+    100% {transform: rotateX(360deg);}
+}
+
+.anima {
+    animation-name: moeda;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

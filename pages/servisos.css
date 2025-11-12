@@ -149,3 +149,102 @@ a {
     border-radius: 5px;
     padding: 3px;
 }
+
+@media (max-width: 1024px) {
+  .banner h1 {
+      width: 35%;
+      font-size: 1.2rem;
+  }
+
+  .banner ul {
+      width: 65%;
+      display: flex;
+  }
+
+  .nev {
+      gap: 10px;
+  }
+
+  .card {
+      height: auto;
+      padding: 20px;
+  }
+
+  footer.contato h2 {
+      font-size: 1rem;
+  }
+}
+
+
+/* === Celulares (até 768px) === */
+@media (max-width: 768px) {
+  /* Mantém o cabeçalho em linha */
+  .banner {
+      flex-direction: row;
+      height: 10vh;
+  }
+
+  .banner h1 {
+      width: 40%;
+      font-size: 1rem;
+      padding: 5px;
+  }
+
+  .banner ul {
+      width: 60%;
+  }
+
+  .nev {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      font-size: 0.9rem;
+  }
+
+  .servicos {
+      padding: 40px 15px;
+  }
+
+  footer.contato {
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      padding: 15px 0;
+  }
+
+  footer.contato h2 {
+      font-size: 1rem;
+  }
+}
+
+/* === Celulares pequenos (até 480px) === */
+@media (max-width: 480px) {
+  .banner h1 {
+      font-size: 0.9rem;
+      width: 45%;
+  }
+
+  .nev li a {
+      font-size: 0.85rem;
+  }
+
+  .nev {
+      gap: 8px;
+  }
+
+  .servicos h2 {
+      font-size: 1.1rem;
+  }
+
+  .card {
+      padding: 15px;
+  }
+
+  #info h3 {
+      font-size: 0.85rem;
+  }
+
+  footer.contato h2 {
+      font-size: 0.9rem;
+  }
+}

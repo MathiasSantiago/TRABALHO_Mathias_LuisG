@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #333;
+    background-color: aliceblue;
 }
 
 .banner {
@@ -15,7 +15,7 @@ body {
 }
 
 .banner h1 {
-    background-color: bisque;
+    background-color: rgb(45, 111, 150);
     width: 30%;
     height: 100%;
     display: flex;
@@ -24,7 +24,7 @@ body {
 }
 
 .banner ul {
-    background-color: antiquewhite;
+    background-color: rgb(33, 81, 109);
     width: 70%;
     height: 100%;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .nev li a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 a {
@@ -52,8 +52,8 @@ a {
 /*-------ANIMAÇÃO--------*/
 
 .anima img {
-    width: 35%;
-    height: 35%;
+    width: 5vw;
+    height: 5vw; 
 }
 
 @keyframes moeda {
@@ -103,7 +103,6 @@ main.contato {
     margin-right: 8px;
 }
 
-/* ======= Redes sociais ======= */
 .redes-sociais {
     margin-top: 20px;
 }
@@ -136,13 +135,11 @@ main.contato {
     transform: scale(1.1);
 }
 
-/* ======= Mapa ======= */
 .mapa h3 {
     color: #003366;
     margin-bottom: 10px;
 }
 
-/* ======= Formulário ======= */
 form {
     display: flex;
     flex-direction: column;
@@ -170,37 +167,48 @@ button:hover {
     background-color: #0055a5;
 }
 
-/* ======= Rodapé ======= */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9rem;
-}
 
-/* ======= Media Queries ======= */
-@media (max-width: 992px) {
-    main.contato {
-        flex-direction: column;
-    }
-
+@media (max-width: 768px) {
     nav ul {
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner h1 {
+        width: 100%;
+        height: auto;
+        background-color: bisque;
+        padding: 10px 0;
+    }
+
+    .banner ul {
+        width: 100%;
+        background-color: antiquewhite;
+    }
+
+    .nev li {
+        margin: 5px 0;
+    }
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.5rem;
-        text-align: center;
+@media (max-width: 480px) {
+
+    .banner h1 {
+        font-size: 16px;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  .nev li a {
+      font-size: 0.85rem;
+  }
+
+  .nev {
+      gap: 8px;
+  }
 
     .redes-sociais a {
         width: 40px;
@@ -210,40 +218,6 @@ footer {
     }
 
     button {
-        font-size: 1rem;
-    }
-}
-
-footer.contato {
-    background-color: #808080;
-    height: 6vh;
-    min-height: 60px; /* Garante altura mínima */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 2%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-footer.contato h2 {
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.1rem;
-    margin: 0;
-    text-align: right;
-}
-
-/* ===== Responsividade ===== */
-@media (max-width: 600px) {
-    footer.contato {
-        justify-content: center;
-        text-align: center;
-        padding-right: 0;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    footer.contato h2 {
         font-size: 1rem;
     }
 }
